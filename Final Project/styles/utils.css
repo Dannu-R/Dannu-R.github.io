@@ -5,14 +5,15 @@
 
 .btn {
   display: inline-block;
-  background-color: var(--clr-slate-800);
-  color: var(--clr-light);
+  background-color: var(--clr-bright);
+  color: var(--clr-slate-800);
   padding: 0.5em 1em;
   border-radius: 6px;
   font-weight: 500;
   line-height: 1.75rem ;
   text-decoration: none;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {

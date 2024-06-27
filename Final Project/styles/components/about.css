@@ -1,0 +1,52 @@
+.about {
+
+  display: flex;
+}
+
+.about__section {
+  text-align: start;
+}
+
+.about__title-1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--size-base);
+  font-family: var(--font-secondary);
+  color: var(--clr-text);
+  padding-bottom: 1rem;
+}
+
+.about__title-2 {
+  color: var(--clr-light);
+  font-size: var(--size-3xl);
+  padding-bottom: 1rem;
+}
+
+.about__desc-1 {
+  font-family: var(--font-secondary);
+  color: var(--clr-muted);
+  padding-bottom: 1rem;
+}
+
+.about__desc-2 {
+  color: var(--clr-text);;
+  padding-bottom: 1rem;
+}
+
+.about__btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about__icon {
+  margin-left: 0.25em;
+  display: inline-block;
+  fill: var(--clr-slate-800);
+  vertical-align: middle;
+  width: 1em;
+  width: 1em;
+}
+
+
+
