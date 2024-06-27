@@ -1,0 +1,142 @@
+.header {
+  /* border: 5px solid red; */
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header__logo {
+  width: var(--size-7xl);
+  height: var(--size-7xl);
+  object-fit: cover;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.header__title {
+  display: none;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__bars {
+  width: var(--size-5xl);
+  height: auto;
+  color: var(--clr-bright);
+}
+
+/* @media (min-width: 475px) {
+
+} */
+
+/* @media (min-width: 640px) {
+
+} */
+
+@media (min-width: 768px) {
+  .header__bars {
+    display: none;
+  }
+     
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .header__icon {  
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: var(--size-lg);
+    color: var(--clr-bright);
+    display: inline-block;
+    line-height: 0;
+    transition: all 0.3s;
+  }
+
+  .header__icon:hover {
+    background-color: var(--clr-slate-800);
+    transform: translateY(-5px);
+  }
+
+  .header__separator {
+    border: 1px solid var(--clr-slate-800);
+    padding-top: 1.5rem;
+  }
+
+  .header__sign-in {
+    font-family: var( --font-secondary);
+    font-size: var(--size-xs);
+    color: var(--clr-text);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+  }
+
+  .header__sign-in:hover {
+    color: var(--clr-light);
+  }
+
+  .header__eab {
+    font-size: var(--size-xs);
+    transition: all 0.3s;
+  }
+
+  .header__icon-container {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+  }
+
+  .header__title {
+    font-family: var(--font-secondary);
+    font-size: var(--size-xl);
+    text-transform: uppercase;
+    align-self: center;
+    display: inline;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__logo {
+    width: var(--size-8xl);
+    height: var(--height-8xl);
+  }
+
+  .header__title {
+    font-size: var(--size-2xl);
+  }
+
+  .header__icon {
+    font-size: var(--size-xl);
+  }
+
+  .header__sign-in {
+    font-size: (--size-sm);
+  }
+
+  .header__eab {
+    font-size: (--size-sm);
+  }
+}
+
+/* @media (min-width: 1536px) {
+
+} */

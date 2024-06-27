@@ -1,0 +1,125 @@
+.courses {
+  margin-top: 5rem;
+}
+
+.courses__title {
+  /* padding-bottom: 1rem; */
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--size-base);
+  font-family: var(--font-secondary);
+  color: var(--clr-text);
+}
+
+.courses__card {
+  display: block;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: var(--clr-card);
+  border-radius: 10px;
+  box-shadow: var(--shadow-xl);
+}
+/* no overlapping margin */
+.courses__card-0margin {
+  margin: 0;
+}
+
+.courses__card-title {
+  font-size: var(--size-lg);
+}
+
+.courses__card-desc {
+  font-family: var(--font-secondary);
+  color: var(--clr-light);
+  margin-bottom: 2.5rem;
+}
+
+.courses__card-info {
+  font-size: var(--size-xs);
+  font-family: var(--font-secondary);
+  color: var(--clr-text);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 475px) {
+  .courses__card-title {
+    font-size: var(--size-xl);
+  }
+
+  .courses__card-desc {
+    font-size: var(--size-sm);
+  }
+
+  .courses__card-info {
+    font-size: var(--size-sm);
+  }
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+  .courses__card {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .courses__card-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'css css css css js js'
+    'rj rj rj nj nj nj'
+    ;
+    gap: 1rem;
+  }
+
+  .courses__card-1 {
+    grid-area: css;
+  }
+
+  .courses__card-2 {
+    grid-area: js;
+  }
+
+  .courses__card-3 {
+    grid-area: rj;
+  }
+
+  .courses__card-4 {
+    grid-area: nj;
+  }
+
+  .courses__card-info {
+    max-width: 70ch;
+  }
+
+  .courses__card-btn {
+    align-self: start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .courses__card-title {
+    font-size: var(--size-2xl);
+  }
+
+  .courses__card-desc {
+    font-size: var(--size-base);
+  }
+
+  .courses__card-info {
+    font-size: var(--size-base);
+  }
+}
+
+@media (min-width: 1536px) {
+
+}
