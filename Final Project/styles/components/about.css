@@ -42,6 +42,7 @@
 
 
 .about__btn {
+  font-size: var(--size-sm);
   margin-bottom: 3rem;
 }
 
@@ -97,6 +98,10 @@
   }
 
   .about__desc-2 {
+    font-size: var(--size-base);
+  }
+
+  .about__btn {
     font-size: var(--size-base);
   }
 }
