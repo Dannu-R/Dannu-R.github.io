@@ -39,6 +39,7 @@
   font-family: var(--font-secondary);
   color: var(--clr-text);
   margin-bottom: 1rem;
+  max-width: 70ch;
 }
 
 @media (min-width: 475px) {
