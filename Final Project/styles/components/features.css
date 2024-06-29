@@ -1,3 +1,8 @@
+.features {
+  margin-top: 5rem;
+}
+
+
 .features__container {
   display: block;
 }
@@ -10,7 +15,12 @@
   color: var(--clr-text);
 }
 
+.features__title-2 {
+  font-size: var(--size-lg);
+}
+
 .features__desc {
+  font-size: var(--size-xs);
   font-family: var(--font-secondary);
   color: var(--clr-muted);
   max-width: 50ch;
@@ -21,24 +31,44 @@
   padding: 2rem;
   background-color: var(--clr-card);
   border-radius: 10px;
+  box-shadow: var(--shadow-xl);
 }
 
 .features__icon {
   padding: 1rem;
+  margin-bottom: 0.5rem;
   width: var(--size-6xl);
   height: var(--size-6xl);
   border-radius: 10px;
-  border: 0.5px solid var(--clr-muted);
-  /* fill: var(--clr-bright);
-  stroke: var(--clr-card); */
+  border: 1px solid var(--clr-slate-800);
+  fill: var(--clr-bright);
+  stroke: var(--clr-card);
+  stroke-width: 1.5px;
+}
+
+.features__card-title {
+  margin-bottom: 0.5rem;
+  font-size: var(--size-lg);
 }
 
 .features__card-desc{
   font-family: var(--font-secondary);
+  font-size: var(--size-sm);
+  color: var(--clr-text);
+  line-height: 2em;
 }
 
-@media (min-width: 475px) {
 
+
+
+@media (min-width: 475px) {
+  .features__title-2 {
+    font-size: var(--size-2xl);
+  }
+
+  .features__title {
+    font-size: var(--size-sm);
+  }
 }
 
 @media (min-width: 640px) {
@@ -48,23 +78,28 @@
 @media (min-width: 768px) {
   .features__card-container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
 
   .features__card {
     margin: 0;
-    box-shadow: var(--shadow-xl);
+    
   }
 
-  
+  .features__title-2 {
+    font-size: var(--size-3xl);
+  }
+
+  .features__title {
+    font-size: var(--size-base);
+  }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 
-}
+} */
 
 @media (min-width: 1280px) {
   .features__container {
@@ -73,11 +108,22 @@
   }
 
   .features__card-container {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 25vw);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .features__text {
+    min-width: 30rem;
+    padding-right: 2rem;
+  }
+
+  .features__title-2 {
+    font-size: var(--size-4xl);
   }
 }
 
-@media (min-width: 1536px) {
-
-}
+/* @media (min-width: 1536px) {
+  
+} */
